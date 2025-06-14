@@ -16,7 +16,7 @@ body {
 
 
 .bg-dark {
-  background-color: #0d1c2b !important;
+  background-color: #0d1c2b 
 }
 
 .btn-primary {
@@ -46,9 +46,3 @@ footer a {
   font-size: 1.3rem;
 }
 
-
-@media (max-width: 767px) {
-  .carousel img {
-    max-height: 250px;
-  }
-}
