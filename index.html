@@ -101,7 +101,6 @@
 </section>
 <!--Closing of carrousel-->
 
-
 <!--Start Quotes-->
 <section class="container my-5">
   <h2 class="text-center mb-4">Quotes and important facts</h2>
@@ -126,7 +125,6 @@
 <section class="container text-center my-4">
   <img src="Images/im4.jpg" class="img-fluid rounded shadow" alt="Im4" />
 </section>
-
 
 <!--Start Tips-->
 <section class="container my-5">
@@ -154,55 +152,44 @@
 </section>
 <!--End Tips-->
 
-
 <!--Start Modal-->
 <div id="modalAyuda" class="modal fade">
   <div class="modal-dialog">
+    <form action="code.php" method="post" class="needs-validation modal-content" novalidate>
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAyudaLabel">Do you want help?</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
 
-    <div class="modal-content">
-
-      <form  action="code.php" class="needs-validation modal-content" novalidate>
-
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalAyudaLabel">Do you want help?</h5>
-          <button class="btn-close" data-bs-dismiss="modal"></button>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+          <div class="invalid-feedback">Please, write your name.</div>
         </div>
 
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" required class= "form-control" class="form-control" id="name" required />
-            <div class="invalid-feedback">Please, write your name.</div>
-          </div> <!--div for name-->
-
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" required class="form-control" />
-            <div class="invalid-feedback">Write a valid email to contact you.</div>
-          </div> <!--div for email-->
-          
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">How can we help you?</label>
-            <textarea class="form-control" id="mensaje" required></textarea>
-            <div class="invalid-feedback">Briefly tell us your situation.</div>
-          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">Write a valid email to contact you.</div>
         </div>
 
-        <!--Buttom-->
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-primary">Send</button>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">How can we help you?</label>
+          <textarea class="form-control" id="mensaje" required></textarea>
+          <div class="invalid-feedback">Briefly tell us your situation.</div>
         </div>
+      </div>
 
-      </form> <!--Closing form-->
-
-    </div> <!--Modal dialog-->
-
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
   </div>
+</div>
+<!--Closing Modal-->
 
-</div> <!--Closing Modal-->
-
-
-<main> <!--End Main-->
+</main> <!--End Main-->
 
 <!--Footer-->
 <footer class="bg-dark text-white py-4 mt-5">
@@ -211,20 +198,17 @@
       <div class="col-md-6">
         <h6>Disconnected</h6>
         <p>A space to reflect on cell phone use and regain control.</p>
-      </div> <!--First column-->
-
+      </div>
       <div class="col-md-6 text-center">
         <h6>For more information click here</h6>
         <a href="https://www.pantallasamigas.net/bienestar-digital/" class="text-white text-decoration-none">
           <i class="bi bi-link"></i>
         </a>
-      </div> <!--Second column-->
-
+      </div>
     </div>
   </div>
 </footer>
 <!--End Footer-->
-
 
 <!--Validation-->
 <script>
